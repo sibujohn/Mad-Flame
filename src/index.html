@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mad Flame</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		</link>
+		<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+		</link>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		</link>
+
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js">
+		</script>
+		<script src="bower_components/angular/angular.min.js">
+		</script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js">
+		</script>
+
+ 		<script type="text/javascript" src="config/routes.js"></script>
+ 		<script type="text/javascript" src="modules/common/factoryService.js"></script>
+ 		<script type="text/javascript" src="modules/launch/launch.js"></script>
+	</head>
+	
+	<body ng-app="routeApp">
+
+		<div ui-view="header"></div>
+		<div ui-view="main"></div>
+		<div ui-view="footer"></div>
+
+	</body>
+</html>
