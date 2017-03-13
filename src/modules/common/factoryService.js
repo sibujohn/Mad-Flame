@@ -7,7 +7,7 @@ factoryApp.service('factoryService', ['$http',
         serviceObject.ajaxRequests = function(url, method, data){
             return $http({
                 method: method,
-                url: 'https://private-40b7e2-angulartestapi1.apiary-mock.com'+url,
+                url: 'https://private-f1e052-madflamesgoogle.apiary-mock.com/'+url,
                 headers: {
                     'Content-Type': 'application/json',
                 },
