@@ -47,7 +47,7 @@ loginApp.controller('launchCtrl', ['$scope', '$rootScope', 'launchService',
                 }
             });
             map.fitBounds(bounds);
-            getPins(bounds)
+            getPins(bounds);
         }
         function getPins(boundary){
             launchService.getPins().then(function(data){
