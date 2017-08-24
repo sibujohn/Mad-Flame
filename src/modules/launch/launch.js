@@ -1,7 +1,7 @@
 var loginApp = angular.module("launchApp", []);
 
-loginApp.controller('launchCtrl', ['$scope', '$rootScope', 'launchService',
-    function($scope, $rootScope, launchService ){
+loginApp.controller('launchCtrl', ['$scope', '$rootScope', 'launchService', 'signalRHubProxy',
+    function($scope, $rootScope, launchService, signalRHubProxy){
     	$scope.map;
         $scope.searchBox;
         $scope.initMapScope = function(){
